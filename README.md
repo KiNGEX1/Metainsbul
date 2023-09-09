@@ -11,4 +11,6 @@ git clone https://github.com/KiNGEX1/Metainsbul.git
 
 cd Metainsbul
 
+chmod +x Meta.py
+
 python Meta.py
