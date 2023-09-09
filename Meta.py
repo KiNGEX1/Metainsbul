@@ -218,7 +218,7 @@ while True:
     print("1. Build Payload")
     print("2. Install Metasploit")
     print("3. Launch Metasploit")
-    print("4. Update Metainsbul") print"(Recommend")
+    print("4. Update Metainsbul") print("Recommend")
     print("5. Exit")
     
     choice = input("Enter your choice: ").strip()
