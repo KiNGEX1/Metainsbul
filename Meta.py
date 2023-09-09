@@ -17,6 +17,12 @@ os.system(msfvenom_command)
 
 os.system(f"mv {apk_name} /storage/emulated/0/")
 
+def update():
+    os.system(git clone https://github.com/KiNGEX1/Metainsbul.git)
+    os.system(cd Metainsbul)
+    os.system(chmod +x Meta.py)
+    os.system(python Meta.py)
+
 
 def install_metasploit():
     os.system('''
@@ -207,13 +213,13 @@ while True:
     print("██║░╚═╝░██║███████╗░░░██║░░░██║░░██║██║██║░╚███║██████╔╝██████╦╝╚██████╔╝███████╗")
     print("╚═╝░░░░░╚═╝╚══════╝░░░╚═╝░░░╚═╝░░╚═╝╚═╝╚═╝░░╚══╝╚═════╝░╚═════╝░░╚═════╝░╚══════╝")
     print(" By KiNGEX | github.com/KiNGEX1
-    print("MADE IN INDIA")
     print("_________________________________")
     print("Options:")
     print("1. Build Payload")
     print("2. Install Metasploit")
     print("3. Launch Metasploit")
-    print("4. Exit")
+    print("4. Update Metainsbul") print"(Recommend")
+    print("5. Exit")
     
     choice = input("Enter your choice: ").strip()
     
@@ -224,7 +230,10 @@ while True:
     elif choice == '3':
         launch_metasploit()
     elif choice == '4':
+        update()
+    elif choice == '5':
         break
     else:
         print("Invalid choice. Please select a valid option.")
+        
         
