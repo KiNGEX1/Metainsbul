@@ -1,9 +1,12 @@
 # Metainsbul
 This is tool for metaspolit easy payload building and easy installation 
+apt update && apt upgrade -y
 
-git clone https://github.com/KiNGEX1/Metainsbul.git
+pkg install git -y
 
 pkg install python -y
+
+git clone https://github.com/KiNGEX1/Metainsbul.git
 
 cd Metainsbul
 
