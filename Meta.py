@@ -24,7 +24,6 @@ def update():
 
 def install_metasploit():
     os.system('''
-  #!/data/data/com.termux/files/usr/bin/bash
 clear
 echo "
    
@@ -233,32 +232,33 @@ while True:
     elif choice == '6':
         break    
     elif choice == '5':
-     print("What's the architecture of your device?")
-     print("1. Arm-64")
-     print("2. Arm-32 bit")
-     architecture_choice = input("Enter your choice: ").strip()
-
-    if architecture_choice == '1':
-        os.system("pkg install wget -y")
-        os.system("wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-arm64.tgz")
-        os.system("tar -xvzf ngrok-v3-stable-linux-arm64.tgz")
-        os.system("rm -rf ngrok-v3-stable-linux-arm64.tgz")
-        os.system("chmod +x ngrok")
-        ngrok_token = input("Enter your ngrok authentication token: ").strip()
-        os.system(f"./ngrok authtoken {ngrok_token}")
-        os.system("./ngrok config upgrade")
-        name = input(" Enter your Port =")
-        os.system(f"./ngrok http {name}")
-    elif architecture_choice == '2':
-        os.system("pkg install wget -y")
-        os.system("wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-386.tgz")
-        os.system("tar -xvzf ngrok-v3-stable-linux-386.tgz")
-        os.system("rm -rf ngrok-v3-stable-linux-386.tgz")
-        os.system("chmod +x ngrok")
-        ngrok_token = input("Enter your ngrok authentication token: ").strip()
-        os.system(f"./ngrok authtoken {ngrok_token}")
-        os.system("./ngrok config upgrade")
-        name = input(" Port =")
-        os.system(f"./ngrok http {name}")
-    else:
-        print("Invalid architecture choice. Please select a valid option.")
+        print("What's the architecture of your device?")
+        print("1. Arm-64")
+        print("2. Arm-32 bit")
+        architecture_choice = input("Enter your choice: ").strip()
+        
+        if architecture_choice == '1':
+            os.system("pkg install wget -y")
+            os.system("wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-arm64.tgz")
+            os.system("tar -xvzf ngrok-v3-stable-linux-arm64.tgz")
+            os.system("rm -rf ngrok-v3-stable-linux-arm64.tgz")
+            os.system("chmod +x ngrok")
+            ngrok_token = input("Enter your ngrok authentication token: ").strip()
+            os.system(f"./ngrok authtoken {ngrok_token}")
+            os.system("./ngrok config upgrade")
+            name = input("Enter your Port =")
+            os.system(f"./ngrok http {name}")
+        elif architecture_choice == '2':
+            os.system("pkg install wget -y")
+            os.system("wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-386.tgz")
+            os.system("tar -xvzf ngrok-v3-stable-linux-386.tgz")
+            os.system("rm -rf ngrok-v3-stable-linux-386.tgz")
+            os.system("chmod +x ngrok")
+            ngrok_token = input("Enter your ngrok authentication token: ").strip()
+            os.system(f"./ngrok authtoken {ngrok_token}")
+            os.system("./ngrok config upgrade")
+            name = input(" Port =")
+            os.system(f"./ngrok http {name}")
+        else:
+            print("Invalid architecture choice. Please select a valid option.")
+            
