@@ -71,7 +71,7 @@ echo "
 ───────────────────▀▀
 
    .......Installing Metasploit.........
-   
+   scprit by Gushmazuko Modified by KiNGEX
    
 "
 termux-setup-storage
@@ -219,9 +219,24 @@ center "*"
 
 def launch_metasploit():
     os.system("msfconsole")
+    
+
 
 while True:
     
+    
+    
+    import time
+
+def loading_animation(iterations, delay=0.1):
+    for _ in range(iterations):
+        print("Loading" + "#" * _ + "." * (iterations - _), end="\r")
+        time.sleep(delay)
+
+while True:
+    loading_animation(5) 
+
+    # Your existing code
     print("███╗░░░███╗███████╗████████╗░█████╗░██╗███╗░░██╗░██████╗██████╗░██╗░░░██╗██╗░░░░░")
     print("████╗░████║██╔════╝╚══██╔══╝██╔══██╗██║████╗░██║██╔════╝██╔══██╗██║░░░██║██║░░░░░")
     print("██╔████╔██║█████╗░░░░░██║░░░███████║██║██╔██╗██║╚█████╗░██████╦╝██║░░░██║██║░░░░░")
@@ -231,7 +246,7 @@ while True:
     print(" By KiNGEX | https://GitHub.com/KiNGEX1")
     print("__________________________________________")
     
-    print("options:")
+    print("Options:")
     print("1. Build Payload")
     print("2. Install Metasploit")
     print("3. Launch Metasploit")
@@ -252,4 +267,6 @@ while True:
         break
     else:
         print("Invalid choice. Please select a valid option.")
+        
+        
         
