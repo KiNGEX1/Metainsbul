@@ -59,7 +59,7 @@ while True:
     elif choice == '6':
         break    
     elif choice == '5':
-        print("What's the architecture of your device?")
+print("What's the architecture of your device?")
 print("1. Arm-64")
 print("2. Arm-32 bit")
 print("3. Already Installed (start)")
