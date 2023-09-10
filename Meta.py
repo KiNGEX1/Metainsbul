@@ -73,8 +73,15 @@ while True:
             ngrok_token = input("Enter your ngrok authentication token: ").strip()
             os.system(f"./ngrok authtoken {ngrok_token}")
             os.system("./ngrok config upgrade")
-            name = input("Enter your Port =")
-            os.system(f"./ngrok http {name}")
+            print(" 1. Start Ngrok")
+            print(" 2. Reverse tcp")
+            print("__________________________________________________")
+            port = input(" Port - ")
+            choice = input("Enter your choice").strip()
+        if choice == '1':
+                os.system(f"./ngrok http {port}")
+        if choice == '2': 
+                os.system(f"./ngrok tcp {port}")
         elif architecture_choice == '2':
             os.system("pkg install wget -y")
             os.system("wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-386.tgz")
@@ -84,8 +91,15 @@ while True:
             ngrok_token = input("Enter your ngrok authentication token: ").strip()
             os.system(f"./ngrok authtoken {ngrok_token}")
             os.system("./ngrok config upgrade")
-            name = input(" Port =")
-            os.system(f"./ngrok http {name}")
+            print(" 1. Start Ngrok")
+            print(" 2. Reverse tcp")
+            print("__________________________________________________")
+            port = input(" Port - ")
+            choice = input("Enter your choice").strip()
+        if choice == '1':
+                os.system(f"./ngrok http {port}")
+        if choice == '2': 
+                os.system(f"./ngrok tcp {port}")
         else:
             print("Invalid architecture choice. Please select a valid option.")
             
