@@ -153,7 +153,7 @@ while True:
     print("3. Launch Metasploit")
     print("4. Update Metainsbul (Recommended)") 
     print("5. Ngrok Install & Start")
-    print("6. Ngrok Install")
+    print("6. Exit")
 
     choice = input("Enter your choice: ").strip()
 
@@ -165,10 +165,9 @@ while True:
         launch_metasploit()
     elif choice == '4':
         update()
-    elif choice == '5':
-        break
     elif choice == '6':
-        
+        break    
+    elif choice == '5':
      print("What's the architecture of your device?")
      print("1. Arm-64")
      print("2. Arm-32 bit")
@@ -178,6 +177,7 @@ while True:
         os.system("pkg install wget -y")
         os.system("wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-arm64.tgz")
         os.system("tar -xvzf ngrok-v3-stable-linux-arm64.tgz")
+        os.system("rm -rf ngrok-v3-stable-linux-arm64.tgz")
         os.system("chmod +x ngrok")
         ngrok_token = input("Enter your ngrok authentication token: ").strip()
         os.system(f"./ngrok authtoken {ngrok_token}")
@@ -188,6 +188,7 @@ while True:
         os.system("pkg install wget -y")
         os.system("wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-386.tgz")
         os.system("tar -xvzf ngrok-v3-stable-linux-386.tgz")
+        os.system("rm -rf ngrok-v3-stable-linux-386.tgz")
         os.system("chmod +x ngrok")
         ngrok_token = input("Enter your ngrok authentication token: ").strip()
         os.system(f"./ngrok authtoken {ngrok_token}")
@@ -196,4 +197,3 @@ while True:
         os.system(f"./ngrok http {name}")
     else:
         print("Invalid architecture choice. Please select a valid option.")
-    
