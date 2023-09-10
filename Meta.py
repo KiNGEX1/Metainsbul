@@ -23,7 +23,7 @@ def update():
     os.system("python Meta.py")
 
 def install_metasploit():
-    os.system("bash MetaInstall.sh")
+    os.system("python requirements.py")
 
 def launch_metasploit():
     os.system("msfconsole")
