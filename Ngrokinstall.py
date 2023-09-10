@@ -1,3 +1,5 @@
+import os
+
 print("What's the architecture of your device?")
 print("1. Arch64")
 print("2. Arch32")
