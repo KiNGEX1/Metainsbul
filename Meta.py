@@ -59,4 +59,4 @@ while True:
     elif choice == '6':
         break    
     elif choice == '5':
-        os.sysrem("python Ngrokinstall.py")
+        os.system("python Ngrokinstall.py")
