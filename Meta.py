@@ -59,13 +59,12 @@ while True:
     elif choice == '6':
         break    
     elif choice == '5':
-print("What's the architecture of your device?")
-print("1. Arm-64")
-print("2. Arm-32 bit")
-print("3. Already Installed (start)")
-architecture_choice = input("Enter your choice: ").strip()
-
-if architecture_choice == '1':
+        print("What's the architecture of your device?")
+        print("1. Arm-64")
+        print("2. Arm-32 bit")
+        architecture_choice = input("Enter your choice: ").strip()
+        
+        if architecture_choice == '1':
             os.system("pkg install wget -y")
             os.system("wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-arm64.tgz")
             os.system("tar -xvzf ngrok-v3-stable-linux-arm64.tgz")
@@ -79,11 +78,11 @@ if architecture_choice == '1':
             print("__________________________________________________")
             port = input(" Port - ")
             choice = input("Enter your choice").strip()
-if choice == '1':
+        if choice == '1':
                 os.system(f"./ngrok http {port}")
-if choice == '2': 
+        if choice == '2': 
                 os.system(f"./ngrok tcp {port}")
-elif architecture_choice == '2':
+        elif architecture_choice == '2':
             os.system("pkg install wget -y")
             os.system("wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-386.tgz")
             os.system("tar -xvzf ngrok-v3-stable-linux-386.tgz")
@@ -97,20 +96,11 @@ elif architecture_choice == '2':
             print("__________________________________________________")
             port = input(" Port - ")
             choice = input("Enter your choice").strip()
-if choice == '1':
+        if choice == '1':
                 os.system(f"./ngrok http {port}")
-if choice == '2': 
+        if choice == '2': 
                 os.system(f"./ngrok tcp {port}")
-elif architecture_choice == '0':
-    print(" 0. Already Installed (Start) ")
-    print(" 1. Start Ngrok")
-    print(" 2. Reverse tcp")
-    print("__________________________________________________")
-    port = input(" Port - ")
-    choice = input("Enter your choice: ").strip()
-    
-if choice == '1':
-        os.system(f"./ngrok http {port}")
-elif choice == '2': 
-        os.system(f"./ngrok tcp {port}")
-
+        else:
+            print("Invalid architecture choice. Please select a valid option.")
+            
+            
