@@ -226,15 +226,7 @@ while True:
     
     
     
-    import time
-
-def loading_animation(iterations, delay=0.1):
-    for _ in range(iterations):
-        print("Loading" + "#" * _ + "." * (iterations - _), end="\r")
-        time.sleep(delay)
-
-while True:
-    loading_animation(5) 
+    
 
     # Your existing code
     print("███╗░░░███╗███████╗████████╗░█████╗░██╗███╗░░██╗░██████╗██████╗░██╗░░░██╗██╗░░░░░")
