@@ -6,7 +6,6 @@ def ip_locator(ip_address):
     data = response.json()
 
     if data["status"] == "success":
-        print(banner)
         print("IP Address:", data["query"])
         print("Country:", data["country"])
         print("Region:", data["regionName"])
