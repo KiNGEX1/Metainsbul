@@ -17,6 +17,7 @@ def build_payload():
     os.system(f"mv {apk_name}.apk /storage/emulated/0/")
 
 def update():
+    os.system("rm -rf Metainsbul")
     os.system("git clone https://github.com/KiNGEX1/Metainsbul.git")
     os.chdir("Metainsbul")
     os.system("chmod +x Meta.py")
