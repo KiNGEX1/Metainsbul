@@ -1,6 +1,7 @@
 import os
 
 print("Fixing Ip tracker")
+print("__________________")
 os.system("apt update && apt upgrade -y")
 os.system("pip install requests")
 print("Fixed")
