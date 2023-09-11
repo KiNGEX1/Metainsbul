@@ -57,6 +57,7 @@ while True:
     elif choice == '4':
         update()
     elif choice == '6':
-        os.system("iptrack")   
+        os.system("clear")
+        os.system("python iptrack.py")   
     elif choice == '5':
         os.system("python Ngrokinstall.py")
