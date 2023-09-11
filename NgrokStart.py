@@ -1,8 +1,9 @@
 import os
 
+os.system("clear")
 print("Start Ngrok.")
-print("1. Start Ngrok")
-print("2. Reverse Tcp")
+print("1. Ngrok http")
+print("2. Ngrok tcp")
 ngrok_choice = input("Enter your choice: ").strip()
 
 
