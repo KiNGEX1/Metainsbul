@@ -12,8 +12,8 @@ if architecture_choice == '1':
     os.system("tar -xvzf ngrok-v3-stable-linux-arm64.tgz")
     os.system("rm -rf ngrok-v3-stable-linux-arm64.tgz")
     os.system("chmod +x ngrok")
-    ngrok_token = input("Enter your ngrok authentication token: ").strip()
-    os.system(f"./ngrok authtoken {ngrok_token}")
+    ngrok_token = input("Add your ngrok authentication token: ").strip()
+    os.system(f"./{ngrok_token}")
     os.system("./ngrok config upgrade")
     os.system("mv ngrok /data/data/com.termux/files/home")
 elif architecture_choice == '2':
@@ -22,8 +22,8 @@ elif architecture_choice == '2':
     os.system("tar -xvzf ngrok-v3-stable-linux-386.tgz")
     os.system("rm -rf ngrok-v3-stable-linux-386.tgz")
     os.system("chmod +x ngrok")
-    ngrok_token = input("Enter your ngrok authentication token: ").strip()
-    os.system(f"./ngrok authtoken {ngrok_token}")
+    ngrok_token = input("Add your ngrok authentication token: ").strip()
+    os.system(f"./{ngrok_token}")
     os.system("./ngrok config upgrade")
     os.system("mv ngrok /data/data/com.termux/files/home")
 elif architecture_choice == '3':
