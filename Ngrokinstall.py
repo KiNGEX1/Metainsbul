@@ -1,10 +1,12 @@
 import os
 
+os.system("clear")
 print("What's the architecture of your device?")
 print("1. Arch64")
 print("2. Arch32")
 print("3. Already Installed (Start)")
 architecture_choice = input("Enter your choice: ").strip()
+os.system("clear")
 
 if architecture_choice == '1':
     os.system("pkg install wget -y")
