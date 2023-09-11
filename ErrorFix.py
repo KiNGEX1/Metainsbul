@@ -1,5 +1,6 @@
 import os
 
+os.system("clear")
 print("Fixing Ip tracker")
 print("__________________")
 os.system("apt update && apt upgrade -y")
