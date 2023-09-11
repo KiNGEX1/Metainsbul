@@ -6,7 +6,7 @@ print("2. Reverse Tcp")
 ngrok_choice = input("Enter your choice: ").strip()
 
 
-ngrok_path = "/data/data/com.termux/files/home/ngrok")
+ngrok_path = "/data/data/com.termux/files/home/ngrok"
 
 if ngrok_choice == '1':
     port = input("Enter your port: ").strip()
