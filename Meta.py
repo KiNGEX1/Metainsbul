@@ -30,7 +30,6 @@ def launch_metasploit():
     os.system("msfconsole")
 
 while True:
-
     os.system("clear")
     print("███╗░░░███╗███████╗████████╗░█████╗░██╗███╗░░██╗░██████╗██████╗░██╗░░░██╗██╗░░░░░")
     print("████╗░████║██╔════╝╚══██╔══╝██╔══██╗██║████╗░██║██╔════╝██╔══██╗██║░░░██║██║░░░░░")
@@ -45,7 +44,7 @@ while True:
     print("1. Build Payload")
     print("2. Install Metasploit")
     print("3. Launch Metasploit")
-    print("4. Update Metainsbul (Recommended)") 
+    print("4. Update Metainsbul") 
     print("5. Ngrok Install & Start")
     print("6. IP Tracker")
     print("7. Fix Errors")
