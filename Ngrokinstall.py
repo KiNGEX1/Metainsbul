@@ -15,7 +15,7 @@ if architecture_choice == '1':
     ngrok_token = input("Enter your ngrok authentication token: ").strip()
     os.system(f"./ngrok authtoken {ngrok_token}")
     os.system("./ngrok config upgrade")
-    os.system("mv ngrok /data/data/com.termux/files/usr/bin")
+    os.system("mv ngrok /data/data/com.termux/files/home")
 elif architecture_choice == '2':
     os.system("pkg install wget -y")
     os.system("wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-386.tgz")
@@ -25,6 +25,6 @@ elif architecture_choice == '2':
     ngrok_token = input("Enter your ngrok authentication token: ").strip()
     os.system(f"./ngrok authtoken {ngrok_token}")
     os.system("./ngrok config upgrade")
-    os.system("mv ngrok /data/data/com.termux/files/usr/bin")
+    os.system("mv ngrok /data/data/com.termux/files/home")
 elif architecture_choice == '3':
     os.system("python NgrokStart.py")
