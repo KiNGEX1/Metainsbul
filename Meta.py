@@ -45,6 +45,7 @@ while True:
     print("4. Update Metainsbul (Recommended)") 
     print("5. Ngrok Install & Start")
     print("6. IP Tracker")
+    print("7. Fix Errors")
 
     choice = input("Enter your choice: ").strip()
 
@@ -61,3 +62,5 @@ while True:
         os.system("python iptrack.py")   
     elif choice == '5':
         os.system("python Iptrackrequire.py")
+    elif choice == '7':
+        os.system("python ErrorFix.py")
