@@ -20,10 +20,7 @@ architecture_choice = input("Enter your choice: ").strip()
 
 if architecture_choice == '1':
     os.system("pkg install wget -y")
-  print("Ngrok Fixed")
-print("Turn On your Hotspot Before using the Ngrok")
 elif architecture_choice == '2':
     os.system("pkg install wget -y")
-print("Ngrok Fixed")
-print("Turn On your Hotspot Before using the Ngrok")
+
   
