@@ -44,7 +44,7 @@ while True:
     print("3. Launch Metasploit")
     print("4. Update Metainsbul (Recommended)") 
     print("5. Ngrok Install & Start")
-    print("6. Exit")
+    print("6. IP Tracker")
 
     choice = input("Enter your choice: ").strip()
 
@@ -57,6 +57,6 @@ while True:
     elif choice == '4':
         update()
     elif choice == '6':
-        break    
+        os.system("iptrack")   
     elif choice == '5':
         os.system("python Ngrokinstall.py")
