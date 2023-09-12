@@ -30,6 +30,7 @@ def launch_metasploit():
     os.system("msfconsole")
 
 while True:
+    os.system("pkg install python -y")
     os.system("clear")
     print("███╗░░░███╗███████╗████████╗░█████╗░██╗███╗░░██╗░██████╗██████╗░██╗░░░██╗██╗░░░░░")
     print("████╗░████║██╔════╝╚══██╔══╝██╔══██╗██║████╗░██║██╔════╝██╔══██╗██║░░░██║██║░░░░░")
