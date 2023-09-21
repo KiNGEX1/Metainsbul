@@ -26,7 +26,7 @@ def build_payload():
 def update():
     os.system("rm -rf Metainsbul")
     os.system("git clone https://github.com/KiNGEX1/Metainsbul.git")
-    os.chdir("Metainsbul")
+    os.chdir("cd Metainsbul")
     os.system("chmod +x Meta.py")
     os.system("python Meta.py")
 
