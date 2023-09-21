@@ -1,5 +1,12 @@
 import os
 
+python_installed = os.system("python --version") == 0
+
+if not python_installed:
+    print("Python is required to start Metasploit.")
+    print("Please install Python (pkg install python -y)")
+else:
+    
 def build_payload():
     lhost = input("LHOST - ")
     lport = input("LPORT - ")
