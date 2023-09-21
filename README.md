@@ -18,4 +18,4 @@ cd Metainsbul
 
 chmod +x Meta.py
 
-python Meta.py
+bash start.sh
