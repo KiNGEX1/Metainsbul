@@ -12,13 +12,9 @@ apt update && apt upgrade -y
 
 pkg install git -y
 
-pkg install python -y
-
-pip install requests (For IP Tracker)
+python setup.sh
 
 git clone https://github.com/KiNGEX1/Metainsbul.git
-
-cd Metainsbul
 
 chmod +x MetaSh
 
