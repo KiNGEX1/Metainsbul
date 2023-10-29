@@ -12,6 +12,6 @@ chmod +x /data/data/com.termux/files/home/MetaSh
 
 clear
 
-cd
-
 echo "Type ./MetaSh to start"
+
+cd $HOME
