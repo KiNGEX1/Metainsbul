@@ -14,7 +14,7 @@ pkg install git -y
 
 pkg install python -y
 
-pip install requests
+pip install requests (For IP Tracker)
 
 git clone https://github.com/KiNGEX1/Metainsbul.git
 
