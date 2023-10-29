@@ -16,7 +16,7 @@ apt update && apt upgrade -y
 
 pkg install git -y
 
-python setup.sh
+bash setup.sh
 
 git clone https://github.com/KiNGEX1/Metainsbul.git
 
