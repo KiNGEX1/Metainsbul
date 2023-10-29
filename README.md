@@ -29,3 +29,16 @@ chmod +x MetaSh
 3.) Metasploit Install Scprit Made by gushmazuko.
 
 4.) github : https://github.com/gushmazuko/metasploit_in_termux
+
+# Why we install Metainsbul?
+
+1.) You can easily Create payloads without copy pasting or typing the metasploit commands
+
+2.) You can easily install ngrok in termux for port forwarding 
+
+3.) You can use Metasploit Faster with Metainsbul
+
+4.) It has a ip tracker
+
+5.) Simple to start easy to use
+
