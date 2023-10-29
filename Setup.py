@@ -1,7 +1,11 @@
 import os
-
+os.system('apt update && apt upgrade -y')
 os.system('pkg install python -y')
-os.system('pip install request')
+os.system('pip install requests')
 os.system('cd Metainsbul')
+os.system('chmod +x MetaSh')
 os.system('mv MetaSh /data/data/com.termux/files/home')
+os.system('cd $HOME')
+os.system('chmod +x MetaSh')
+os.system('clear')
 print("Type ./MetaSh to start")
