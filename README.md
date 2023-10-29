@@ -19,3 +19,11 @@ git clone https://github.com/KiNGEX1/Metainsbul.git
 chmod +x MetaSh
 
 ./MetaSh
+
+# Credits
+
+ChatGPT used.
+My Idea.
+Metasploit Install Scprit Made by gushmazuko.
+
+github https://github.com/gushmazuko/metasploit_in_termux
