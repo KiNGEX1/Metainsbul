@@ -20,4 +20,6 @@ git clone https://github.com/KiNGEX1/Metainsbul.git
 
 cd Metainsbul
 
-bash start.sh
+chmod +x MetaSh
+
+./MetaSh
