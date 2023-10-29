@@ -30,6 +30,8 @@ chmod +x MetaSh
 
 4.) github : https://github.com/gushmazuko/metasploit_in_termux
 
+5.) If you are thinking then why i install metainsbul read this 
+
 # Why we install Metainsbul?
 
 1.) You can easily Create payloads without copy pasting or typing the metasploit commands
