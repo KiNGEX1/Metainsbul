@@ -22,8 +22,10 @@ chmod +x MetaSh
 
 # Credits
 
-ChatGPT used.
-My Idea.
-Metasploit Install Scprit Made by gushmazuko.
+1.) ChatGPT used.
 
-github https://github.com/gushmazuko/metasploit_in_termux
+2.) My Idea.
+
+3.) Metasploit Install Scprit Made by gushmazuko.
+
+4.) github : https://github.com/gushmazuko/metasploit_in_termux
