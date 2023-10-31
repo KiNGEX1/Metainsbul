@@ -18,7 +18,7 @@ This is tool for metasploit easy payload building and easy installation
     
     bash setup.sh
 
-    git clone https://github.com/KiNGEX1/Metainsbul.git
+    
 
     chmod +x MetaSh
 
