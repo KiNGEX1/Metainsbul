@@ -16,7 +16,7 @@ This is tool for metasploit easy payload building and easy installation
 ### 
     pkg install git -y
 ###       
-    https://github.com/KiNGEX1/Metainsbul
+    git clone  https://github.com/KiNGEX1/Metainsbul
 ### 
     bash setup.sh
 ### 
