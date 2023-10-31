@@ -12,17 +12,17 @@ This is tool for metasploit easy payload building and easy installation
 
 # INSTALLATION
 
-apt update && apt upgrade -y
+    apt update && apt upgrade -y
 
-pkg install git -y
+    pkg install git -y
+    
+    bash setup.sh
 
-bash setup.sh
+    git clone https://github.com/KiNGEX1/Metainsbul.git
 
-git clone https://github.com/KiNGEX1/Metainsbul.git
+    chmod +x MetaSh
 
-chmod +x MetaSh
-
-./MetaSh
+    ./MetaSh
 
 # Credits
 
