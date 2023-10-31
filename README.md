@@ -13,15 +13,15 @@ This is tool for metasploit easy payload building and easy installation
 # INSTALLATION
 
     apt update && apt upgrade -y
-#  
+### 
     pkg install git -y
-#         
+###       
 
-#   
+### 
     bash setup.sh
-#  
+### 
     chmod +x MetaSh
-#  
+### 
     ./MetaSh
 
 # Credits
