@@ -22,6 +22,6 @@ cd $HOME
 
 cd
 
-mv Metainsbul /data/data/com.termux/files
+mv Metainsbul /data/data/com.termux
 
 echo "Type ./msh to start"
