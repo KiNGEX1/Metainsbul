@@ -6,8 +6,8 @@ pip install requests
 
 cd Metainsbul
 
-mv S /data/data/com.termux/files/home
+mv msh /data/data/com.termux/files/home
 
-chmod +x /data/data/com.termux/files/home/S
+chmod +x /data/data/com.termux/files/home/msh
 
 python Meta.py
