@@ -22,9 +22,9 @@ This is tool for metasploit easy payload building and easy installation
 ###
     bash setup.sh
 ### 
-    chmod +x S
+    chmod +x msh
 ### 
-    ./S
+    ./msh
 
 # Credits
 
