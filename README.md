@@ -18,6 +18,8 @@ This is tool for metasploit easy payload building and easy installation
 ###       
     git clone https://github.com/KiNGEX1/Metainsbul
 ### 
+    cd Metainsbul
+###
     bash setup.sh
 ### 
     chmod +x S
