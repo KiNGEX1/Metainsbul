@@ -1,9 +1,13 @@
 import os
     
 def build_payload():
+    os.system('clear')
     lhost = input("LHOST - ")
+    os.system('clear')
     lport = input("LPORT - ")
+    os.system('clear')
     apk_name = input("Payload Name - ")
+    os.system('clear')
     print("THE PAYLOAD IS AUTOMATICALLY MOVED TO YOUR Sdcard")
     print("JUST OPEN FILE MANAGER AND VISIT APKS OR JUST SCROLL DOWN")
     print("IN FOLDERS SECTION")
@@ -42,27 +46,31 @@ while True:
     
     print("Options:")
     print("1. Build Payload")
-    print("2. Install Metasploit")
-    print("3. Launch Metasploit")
-    print("4. Update Metainsbul") 
-    print("5. Ngrok Install & Start")
-    print("6. IP Tracker")
-    print("7. Fix Errors")
+print("2. Install Metasploit")
+print("3. Launch Metasploit")
+print("4. Update Metainsbul") 
+print("5. Ngrok Install & Start")
+print("6. IP Tracker")
+print("7. Fix Errors")
+print("8. Delete Metainsbul")
 
-    choice = input("Enter your choice: ").strip()
+choice = input("Enter your choice: ").strip()
 
-    if choice == '1':
-        build_payload() 
-    elif choice == '2':
-        install_metasploit()
-    elif choice == '3':
-        launch_metasploit()
-    elif choice == '4':
-        update()
-    elif choice == '6':
-        os.system("clear")
-        os.system("python iptrack.py")   
-    elif choice == '5':
-        os.system("python Ngrokinstall.py")
-    elif choice == '7':
-        os.system("python ErrorFix.py")
+if choice == '1':
+    build_payload() 
+elif choice == '2':
+    install_metasploit()
+elif choice == '3':
+    launch_metasploit()
+elif choice == '4':
+    update()
+elif choice == '6':
+    os.system("clear")
+    os.system("python iptrack.py")   
+elif choice == '5':
+    os.system("python Ngrokinstall.py")
+elif choice == '7':
+    os.system("python ErrorFix.py")
+elif choice == '8':
+    os.system('cd /data/data/com.termux')
+    os.system('rm -rf Metainsbul')
