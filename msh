@@ -1,2 +1,3 @@
+cd ..
 cd Metainsbul
 python Meta.py
