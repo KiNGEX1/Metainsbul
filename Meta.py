@@ -43,9 +43,10 @@ while True:
     print("╚═╝░░░░░╚═╝╚══════╝░░░╚═╝░░░╚═╝░░╚═╝╚═╝╚═╝░░╚══╝╚═════╝░╚═════╝░░╚═════╝░╚══════╝")
     print(" By KiNGEX | https://GitHub.com/KiNGEX1")
     print("__________________________________________")
-    
-    print("Options:")
-    print("1. Build Payload")
+
+
+print("Options:")
+print("1. Build Payload")
 print("2. Install Metasploit")
 print("3. Launch Metasploit")
 print("4. Update Metainsbul") 
