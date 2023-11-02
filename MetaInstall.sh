@@ -137,7 +137,8 @@ echo -e "\033[32m Suppressing Warnings\033[0m"
 #sed -i '14 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp384.rb
 #sed -i '14 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp521.rb
 
-echo
 center "*"
 echo -e "\033[32m Installation complete. \n Launch metasploit by executing: msfconsole\033[0m"
 center "*"
+
+mv metasploit-framework /data/data/com.termux/files/home
