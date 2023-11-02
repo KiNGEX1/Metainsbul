@@ -16,4 +16,12 @@ rm -rf msh.zip
 
 chmod +x msh
 
+cd /data/data/com.termux/files/home
+
+cd $HOME
+
+cd
+
+mv Metainsbul /data/data/com.termux/files
+
 echo "Type ./msh to start"
