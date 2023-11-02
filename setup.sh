@@ -10,4 +10,10 @@ mv msh /data/data/com.termux/files/home
 
 chmod +x /data/data/com.termux/files/home/msh
 
-python Meta.py
+unzip msh.zip
+
+rm -rf msh.zip
+
+chmod +x msh
+
+echo "Type ./msh to start"
