@@ -69,5 +69,5 @@ while True:
     elif choice == '7':
         os.system("python ErrorFix.py")
     elif choice == '8':
-        os.system('cd /data/data/com.termux')
-        os.system('rm -rf Metainsbul')
+        os.system('python process.py')
+        
