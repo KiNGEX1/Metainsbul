@@ -42,16 +42,21 @@ while True:
 
 
     print("Options:")
-    print("1. Build Payload")
-    print("2. Install Metasploit")
-    print("3. Launch Metasploit")
+    print("1. Build Payload (Android Only) ")
+    print("2. Install Metasploit (from modified scprit)")
+    print("3. Install Metasploit (from official)")
     print("4. Update Metainsbul") 
     print("5. Ngrok Install & Start")
     print("6. IP Tracker")
     print("7. Fix Errors")
-    print("8. Delete Metainsbul")
+    print("8. Install ubuntu to run as root")
+    print("9. Install Metasploit in ubuntu")
+    print("10. Launch Metasploit in unbuntu (You can run msfvemon commands) ")
+    print("11. Launch Metasploit")
+    print("12. Black hat tools")
+    print("13. exit tool")
 
-    choice = input("Enter your choice: ").strip()
+    choice = input("\033[91mKiNGEX: \033[0m").strip()
 
     if choice == '1':
         build_payload() 
