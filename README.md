@@ -1,3 +1,7 @@
+# Disclaimer
+
+the tool is under construction
+
 # Metainsbul
 
 MADE IN INDIA 🇮🇳
