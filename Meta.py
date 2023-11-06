@@ -1,9 +1,13 @@
 import os
     
 def build_payload():
+    os.system('clear')
     lhost = input("LHOST - ")
+    os.system('clear')
     lport = input("LPORT - ")
+    os.system('clear')
     apk_name = input("Payload Name - ")
+    os.system('clear')
     print("THE PAYLOAD IS AUTOMATICALLY MOVED TO YOUR Sdcard")
     print("JUST OPEN FILE MANAGER AND VISIT APKS OR JUST SCROLL DOWN")
     print("IN FOLDERS SECTION")
@@ -46,20 +50,35 @@ while True:
     print("________________________________________")
 
 
-    print("Options:")
-    print("1. Build Payload (Android Only) ")
-    print("2. Install Metasploit (from modified scprit)")
-    print("3. Install Metasploit (from official)")
-    print("4. Update Metainsbul") 
-    print("5. Ngrok Install & Start")
-    print("6. IP Tracker")
-    print("7. Fix Errors")
-    print("8. Install ubuntu to run as root")
-    print("9. Install Metasploit in ubuntu")
-    print("10. Launch Metasploit in unbuntu (You can run msfvemon commands) ")
-    print("11. Launch Metasploit")
-    print("12. Black hat tools")
-    print("13. exit tool")
+    print("\033[93mOptions:\033[0m")
+    print(" ")         
+    print("\033[93m1. Build Payload (Android Only)\033[0m")
+    print(" ")          
+    print("\033[93m2. Install Metasploit (from modified scprit)\033[0m")
+    print(" ")          
+    print("\033[93m3. Install Metasploit (from official)\033[0m")
+    print(" ")          
+    print("\033[93m4. Update Metainsbul\033[0m") 
+    print(" ")          
+    print("\033[93m5. Ngrok Install & Start\033[0m")
+    print(" ")          
+    print("\033[93m6. IP Tracker\033[0m")
+    print(" ")         
+    print("\033[93m7. Fix Errors\033[0m")
+    print(" ")          
+    print("\033[93m8. Install ubuntu to run as root\033[0m")
+    print(" ")          
+    print("\033[93m9. Install Metasploit in ubuntu\033[0m")
+    print(" ")         
+    print("\033[93m10. Launch Metasploit in unbuntu (You can run msfvemon commands) \033[0m")
+    print(" ")         
+    print("\033[93m11. Launch Metasploit\033[0m")
+    print(" ")          
+    print("\033[93m12. Black hat tools\033[0m")
+    print(" ")          
+    print("\033[93m13. install Apktool\033[0m")
+    print(" ")         
+    print("\033[93m14. exit tool \033[0m")
 
     choice = input("\033[91mKiNGEX: \033[0m").strip()
 
@@ -79,5 +98,6 @@ while True:
     elif choice == '7':
         os.system("python ErrorFix.py")
     elif choice == '8':
-        os.system('python process.py')
-        
+        os.system('python ubuntu.py')
+    elif choice == '9':
+        os.system('python umeta.py
