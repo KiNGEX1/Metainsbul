@@ -1,7 +1,6 @@
 # Disclaimer
 
-the tool is under construction
-do not install now othervise it will show errors
+the tool is updating
 
 # Metainsbul
 
