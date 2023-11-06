@@ -27,8 +27,13 @@ def install_metasploit():
     os.system("python requirements.py")
 
 def launch_metasploit():
-    os.system("msfconsole")
+    os.system('pkg install curl')
+    os.system('pkg install ruby -y')
+    os.system('curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \')
+    os.system('chmod 755 msfinstall && \')
+    os.system('./msfinstall')
 
+  
 while True:
     os.system("clear")
     print("███╗░░░███╗███████╗████████╗░█████╗░██╗███╗░░██╗░██████╗██████╗░██╗░░░██╗██╗░░░░░")
@@ -38,7 +43,7 @@ while True:
     print("██║░╚═╝░██║███████╗░░░██║░░░██║░░██║██║██║░╚███║██████╔╝██████╦╝╚██████╔╝███████╗")
     print("╚═╝░░░░░╚═╝╚══════╝░░░╚═╝░░░╚═╝░░╚═╝╚═╝╚═╝░░╚══╝╚═════╝░╚═════╝░░╚═════╝░╚══════╝")
     print(" By KiNGEX | https://GitHub.com/KiNGEX1")
-    print("__________________________________________")
+    print("________________________________________")
 
 
     print("Options:")
