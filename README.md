@@ -1,6 +1,3 @@
-# Disclaimer
-
-the tool is updating
 
 # Metainsbul
 
@@ -9,10 +6,6 @@ MADE IN INDIA 🇮🇳
 This is tool for metasploit easy payload building and easy installation 
 
 (update - If you facing any error I added a option called Fix Error you can run it will try to fix errors and help you to slove your problem)
-
-### Upcoming Update
-
--You can select which type of payload you want to make
 
 ###
 # INSTALLATION
