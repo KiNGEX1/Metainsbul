@@ -31,7 +31,7 @@ def install_metasploit():
     os.system("python requirements.py")
 
 def launch_metasploit():
-    os.system("bash offifile.sh")
+    os.system("msfconsole")
   
 while True:
     os.system("clear")
@@ -49,9 +49,9 @@ while True:
     print(" ")         
     print("\033[93m1. Build Payload (Android Only)\033[0m")
     print(" ")          
-    print("\033[93m2. Install Metasploit (from modified scprit)\033[0m")
+    print("\033[93m2. Install Metasploit \033[0m")
     print(" ")          
-    print("\033[93m3. Install Metasploit (from official)\033[0m")
+    print("\033[93m3. Launch Metasploit\033[0m")
     print(" ")          
     print("\033[93m4. Update Metainsbul\033[0m") 
     print(" ")          
@@ -60,20 +60,11 @@ while True:
     print("\033[93m6. IP Tracker\033[0m")
     print(" ")         
     print("\033[93m7. Fix Errors\033[0m")
-    print(" ")          
-    print("\033[93m8. Install ubuntu to run as root\033[0m")
-    print(" ")          
-    print("\033[93m9. Install Metasploit in ubuntu\033[0m")
     print(" ")         
-    print("\033[93m10. Launch Metasploit in unbuntu (You can run msfvemon commands) \033[0m")
-    print(" ")         
-    print("\033[93m11. Launch Metasploit\033[0m")
+    print("\033[93m8. install Sqlmap\033[0m")
     print(" ")          
-    print("\033[93m12. Black hat tools\033[0m")
-    print(" ")          
-    print("\033[93m13. install Apktool\033[0m")
-    print(" ")         
-    print("\033[93m14. exit tool \033[0m")
+    print("\033[93m9. install Apktool\033[0m")
+    
 
     choice = input("\033[91mKiNGEX: \033[0m").strip()
 
@@ -93,6 +84,6 @@ while True:
     elif choice == '7':
         os.system("python ErrorFix.py")
     elif choice == '8':
-        os.system('python ubuntu.py')
+        os.system("python installsql.py")
     elif choice == '9':
-        os.system('python umeta.py
+        os.system("python apktool.py")
