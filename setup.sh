@@ -1,5 +1,7 @@
 apt update && apt upgrade -y
 
+apt install figlet -y
+
 pkg install python -y
 
 pip install requests
