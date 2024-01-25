@@ -2,8 +2,10 @@ import os
     
 def build_payload():
     os.system('clear')
+    os.system("figlet LHOST")
     lhost = input("LHOST - ")
     os.system('clear')
+    os.system("figlet LPORT")
     lport = input("LPORT - ")
     os.system('clear')
     apk_name = input("Payload Name - ")
