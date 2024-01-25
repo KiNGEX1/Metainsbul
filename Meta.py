@@ -64,6 +64,7 @@ while True:
     print("\033[93m8. install Sqlmap\033[0m")
     print(" ")          
     print("\033[93m9. install Apktool\033[0m")
+    print("")
     
 
     choice = input("\033[91mKiNGEX: \033[0m").strip()
