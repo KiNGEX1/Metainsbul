@@ -1,5 +1,5 @@
 
-# Metainsbul
+# Satsriakal 
 
 
 This is tool for metasploit easy payload building and easy installation 
